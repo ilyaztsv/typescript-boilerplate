@@ -1,0 +1,27 @@
+{
+    "transform": {
+        ".(tsx?)": "<rootDir>/node_modules/ts-jest/preprocessor.js"
+    },
+    "testMatch": [
+        "**/__tests__/**/*.{t,j}s?(x)",
+        "**/?(*.)(spec|test).{t,j}s?(x)"
+    ],
+    "testPathIgnorePatterns": [
+        "<rootDir>/(node_modules|dist|coverage)"
+    ],
+    "collectCoverageFrom": [
+        "src/**/*.{t,j}s?(x)",
+        "!src/**/*.d.ts"
+    ],
+    "moduleFileExtensions": ["js", "jsx", "json", "ts", "tsx"],
+    "globals": {
+        "__TS_CONFIG__": {
+            "target": "ES6",
+            "module": "commonjs",
+            "inlineSourceMap": true
+        }
+    },
+    "moduleNameMapper": {
+        "\\.(css|scss|less)$": "identity-obj-proxy"
+    }
+}

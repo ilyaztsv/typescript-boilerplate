@@ -1,0 +1,8 @@
+{
+  "extends": ["tslint:recommended"],
+  "rules": {
+    "prefer-const": true,
+    "quotemark": [true, "single", "jsx-double"],
+    "arrow-parens": false
+  }
+}

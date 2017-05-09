@@ -1,0 +1,9 @@
+@import "../node_modules/spectre.css";
+
+.column {
+	margin: 0 auto;
+
+	& .card {
+		margin-bottom: 30px;
+	}
+}
