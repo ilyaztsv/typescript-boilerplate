@@ -5,10 +5,13 @@
   "main": "lib/index.js",
   "module": "es/index.js",
   "browser": "dist/bundle.js",
+  "engines": {
+    "node": ">= 6.9.0"
+  },
   "types": "dist/bundle.d.ts",
   "scripts": {
     "build": "NODE_ENV=production node_modules/webpack/bin/webpack.js --config webpack.config.js --progress --profile --bail",
-    "build:dev": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --config webpack.config.js --inline --progress --port 8080",
+    "dev": "node_modules/webpack-dev-server/bin/webpack-dev-server.js --config webpack.config.js --inline --progress --port 8080",
     "clean": "rimraf dist coverage",
     "typecheck": "tsc --noEmit",
     "lint": "tslint --project tsconfig.json --type-check --format stylish",
